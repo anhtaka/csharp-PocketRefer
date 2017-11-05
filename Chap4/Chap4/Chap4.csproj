@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1572F476-34E4-4024-9FD5-4182448BAD91}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chap4</RootNamespace>
+    <AssemblyName>Chap4</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Chap4.StackPushPop</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DictionaryKeysValues.cs" />
+    <Compile Include="CollectionAdd.cs" />
+    <Compile Include="CollectionAllAny.cs" />
+    <Compile Include="CollectionAverageSum.cs" />
+    <Compile Include="CollectionConcat.cs" />
+    <Compile Include="CollectionContains.cs" />
+    <Compile Include="CollectionCopyTo.cs" />
+    <Compile Include="CollectionCount.cs" />
+    <Compile Include="CollectionDistinct.cs" />
+    <Compile Include="CollectionForEach.cs" />
+    <Compile Include="CollectionMaxMin.cs" />
+    <Compile Include="CollectionRemoveClear.cs" />
+    <Compile Include="CollectionUnion.cs" />
+    <Compile Include="CollectionWhere.cs" />
+    <Compile Include="DictionaryAdd.cs" />
+    <Compile Include="DictionaryContains.cs" />
+    <Compile Include="DictionaryItem.cs" />
+    <Compile Include="DictionaryNew.cs" />
+    <Compile Include="HashSetNew.cs" />
+    <Compile Include="HashSetSubSuper.cs" />
+    <Compile Include="LinkedListAdd.cs" />
+    <Compile Include="LinkedListFirstLast.cs" />
+    <Compile Include="LinkedListNew.cs" />
+    <Compile Include="ListAdd.cs" />
+    <Compile Include="ListConvertAll.cs" />
+    <Compile Include="ListFind.cs" />
+    <Compile Include="ListForEach.cs" />
+    <Compile Include="ListIndexOf.cs" />
+    <Compile Include="ListInsert.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="ListNew.cs" />
+    <Compile Include="ListRemove.cs" />
+    <Compile Include="ListSort.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueEnDe.cs" />
+    <Compile Include="QueueNew.cs" />
+    <Compile Include="StackNew.cs" />
+    <Compile Include="StackPushPop.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

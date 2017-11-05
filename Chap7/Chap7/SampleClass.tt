@@ -1,0 +1,10 @@
+﻿<#@ template debug="true" hostspecific="true" language="C#" #>
+<#@ output extension=".cs" encoding="utf-8" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ import namespace="System.Linq" #>
+public class SampleClass
+{
+<# foreach(var i in Enumerable.Range(1, 10)) { // #>
+	public string Prop<#= i #> { get; set; }
+<# } #>
+}
